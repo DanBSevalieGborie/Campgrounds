@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Campgrounds</string>
+
+    <!-- Content descriptions -->
+    <string name="campground_image_description">Photo of the campground</string>
+
+    <!-- Placeholder text, shown in the layout preview before real data binds -->
+    <string name="placeholder_campground_name">Campground Name</string>
+    <string name="placeholder_location">(lat:0.0, lng:0.0)</string>
+    <string name="placeholder_description">Campground description</string>
+</resources>

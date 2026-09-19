@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ============================================================
+         Text styles. Every TextView in the app points at one of these
+         instead of setting size/color/style inline.
+         ============================================================ -->
+
+    <style name="TextAppearance.Campgrounds" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <!-- Campground name in a list row -->
+    <style name="TextAppearance.Campgrounds.Title">
+        <item name="android:textSize">@dimen/text_size_title</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- Campground name on the detail screen -->
+    <style name="TextAppearance.Campgrounds.Title.Large">
+        <item name="android:textSize">@dimen/text_size_title_large</item>
+        <item name="android:maxLines">3</item>
+    </style>
+
+    <!-- The lat/long line -->
+    <style name="TextAppearance.Campgrounds.Location">
+        <item name="android:textSize">@dimen/text_size_caption</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">@color/text_accent</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- Description text in a list row: clipped to a few lines -->
+    <style name="TextAppearance.Campgrounds.Body">
+        <item name="android:textSize">@dimen/text_size_body</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:lineSpacingMultiplier">1.15</item>
+        <item name="android:maxLines">4</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- Description text on the detail screen: shown in full -->
+    <style name="TextAppearance.Campgrounds.Body.Full">
+        <item name="android:maxLines">100</item>
+        <item name="android:ellipsize">none</item>
+    </style>
+
+    <!-- ============================================================
+         Widget styles
+         ============================================================ -->
+
+    <style name="Widget.Campgrounds.CardView" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="cardBackgroundColor">@color/card_surface</item>
+        <item name="android:layout_marginStart">@dimen/spacing_m</item>
+        <item name="android:layout_marginEnd">@dimen/spacing_m</item>
+        <item name="android:layout_marginTop">@dimen/spacing_s</item>
+        <item name="android:layout_marginBottom">@dimen/spacing_s</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="Widget.Campgrounds.Image" parent="">
+        <item name="android:background">@color/image_placeholder</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="Widget.Campgrounds.Image.Thumbnail" />
+
+    <style name="Widget.Campgrounds.Image.Hero" />
+
+    <style name="Widget.Campgrounds.RecyclerView" parent="">
+        <item name="android:background">@color/app_background</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:paddingTop">@dimen/spacing_s</item>
+        <item name="android:paddingBottom">@dimen/spacing_s</item>
+        <item name="android:scrollbars">vertical</item>
+    </style>
+
+</resources>

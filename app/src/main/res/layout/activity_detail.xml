@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Campground detail screen. Wrapped in a ScrollView so long NPS descriptions
+     stay readable instead of running off the bottom of the screen. -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detailScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:fillViewport="true"
+    tools:context=".DetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/detailLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/spacing_xl">
+
+        <!-- Hero image -->
+        <ImageView
+            android:id="@+id/campgroundImage"
+            style="@style/Widget.Campgrounds.Image.Hero"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/detail_image_height"
+            android:contentDescription="@string/campground_image_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/backgrounds/scenic" />
+
+        <!-- Campground name -->
+        <TextView
+            android:id="@+id/campgroundName"
+            style="@style/TextAppearance.Campgrounds.Title.Large"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_l"
+            android:layout_marginTop="@dimen/spacing_l"
+            android:layout_marginEnd="@dimen/spacing_l"
+            android:text="@string/placeholder_campground_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/campgroundImage" />
+
+        <!-- Latitude / longitude -->
+        <TextView
+            android:id="@+id/campgroundLocation"
+            style="@style/TextAppearance.Campgrounds.Location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_l"
+            android:layout_marginTop="@dimen/spacing_xs"
+            android:layout_marginEnd="@dimen/spacing_l"
+            android:text="@string/placeholder_location"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/campgroundName" />
+
+        <!-- Full description -->
+        <TextView
+            android:id="@+id/campgroundDescription"
+            style="@style/TextAppearance.Campgrounds.Body.Full"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_l"
+            android:layout_marginTop="@dimen/spacing_m"
+            android:layout_marginEnd="@dimen/spacing_l"
+            android:text="@string/placeholder_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/campgroundLocation" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

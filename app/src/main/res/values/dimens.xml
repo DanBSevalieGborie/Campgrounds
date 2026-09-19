@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Spacing scale -->
+    <dimen name="spacing_xs">4dp</dimen>
+    <dimen name="spacing_s">8dp</dimen>
+    <dimen name="spacing_m">12dp</dimen>
+    <dimen name="spacing_l">16dp</dimen>
+    <dimen name="spacing_xl">24dp</dimen>
+
+    <!-- Cards -->
+    <dimen name="card_corner_radius">12dp</dimen>
+    <dimen name="card_elevation">2dp</dimen>
+
+    <!-- Images -->
+    <dimen name="list_item_image_height">116dp</dimen>
+    <dimen name="detail_image_height">240dp</dimen>
+
+    <!-- Type scale -->
+    <dimen name="text_size_title">17sp</dimen>
+    <dimen name="text_size_title_large">22sp</dimen>
+    <dimen name="text_size_body">14sp</dimen>
+    <dimen name="text_size_caption">12sp</dimen>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Starter palette (kept so nothing that still references it breaks) -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Campground brand palette -->
+    <color name="forest_green">#FF2E6E4E</color>
+    <color name="forest_green_dark">#FF1B4332</color>
+    <color name="forest_green_light">#FF74C69D</color>
+    <color name="trail_sand">#FFE9C46A</color>
+
+    <!-- Semantic colors: these are the ones the layouts and styles reference.
+         values-night/colors.xml redefines them for dark mode. -->
+    <color name="app_background">#FFF4F7F4</color>
+    <color name="card_surface">#FFFFFFFF</color>
+    <color name="image_placeholder">#FFDCE5DD</color>
+    <color name="text_primary">#FF1B1B1B</color>
+    <color name="text_secondary">#FF5F6B63</color>
+    <color name="text_accent">#FF2E6E4E</color>
+</resources>

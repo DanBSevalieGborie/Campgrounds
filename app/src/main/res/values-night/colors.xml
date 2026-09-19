@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark-mode overrides for the semantic colors. Every layout and style
+         references these names, so the whole UI follows the system theme. -->
+    <color name="app_background">#FF121612</color>
+    <color name="card_surface">#FF1E241F</color>
+    <color name="image_placeholder">#FF2C352E</color>
+    <color name="text_primary">#FFECEFEA</color>
+    <color name="text_secondary">#FFA8B5AC</color>
+    <color name="text_accent">#FF74C69D</color>
+</resources>

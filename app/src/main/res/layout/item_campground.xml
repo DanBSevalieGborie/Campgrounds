@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- One row in the campgrounds list. All sizing, color and text styling lives in
+     styles.xml / dimens.xml / colors.xml - nothing is hard-coded here. -->
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.Campgrounds.CardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/list_item_image_height"
+        android:paddingBottom="@dimen/spacing_m">
+
+        <!-- Campground image -->
+        <ImageView
+            android:id="@+id/campgroundImage"
+            style="@style/Widget.Campgrounds.Image.Thumbnail"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/list_item_image_height"
+            android:contentDescription="@string/campground_image_description"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent=".35"
+            tools:src="@tools:sample/backgrounds/scenic" />
+
+        <!-- Campground name -->
+        <TextView
+            android:id="@+id/campgroundName"
+            style="@style/TextAppearance.Campgrounds.Title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_m"
+            android:layout_marginTop="@dimen/spacing_m"
+            android:layout_marginEnd="@dimen/spacing_m"
+            android:text="@string/placeholder_campground_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/campgroundImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Campground location (lat/long) -->
+        <TextView
+            android:id="@+id/campgroundLocation"
+            style="@style/TextAppearance.Campgrounds.Location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_m"
+            android:layout_marginTop="@dimen/spacing_xs"
+            android:layout_marginEnd="@dimen/spacing_m"
+            android:text="@string/placeholder_location"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/campgroundImage"
+            app:layout_constraintTop_toBottomOf="@id/campgroundName" />
+
+        <!-- Campground description -->
+        <TextView
+            android:id="@+id/campgroundDescription"
+            style="@style/TextAppearance.Campgrounds.Body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_m"
+            android:layout_marginTop="@dimen/spacing_s"
+            android:layout_marginEnd="@dimen/spacing_m"
+            android:text="@string/placeholder_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/campgroundImage"
+            app:layout_constraintTop_toBottomOf="@id/campgroundLocation" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
